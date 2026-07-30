@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "author": "Bathina Bhavya Sri Lakshmi",
+  "author": "Bolisetti Uday Shankar",
   "editor": "wokwi",
   "parts": [
     { "type": "wokwi-arduino-uno", "id": "uno", "top": 77.4, "left": 57, "attrs": {} },
