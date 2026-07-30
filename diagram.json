@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "author": "Bathina Bhavya Sri Lakshmi",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 77.4, "left": 57, "attrs": {} },
+    { "type": "wokwi-lcd1602", "id": "lcd1", "top": -178.97, "left": 25.6, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 111.8,
+      "left": -96,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 32.75,
+      "left": -144,
+      "attrs": { "value": "10000" }
+    }
+  ],
+  "connections": [
+    [ "lcd1:VSS", "uno:GND.1", "green", [ "v48", "h105.6", "v9.6" ] ],
+    [ "lcd1:VDD", "uno:5V", "green", [ "v19.2", "h-57.5", "v268.8", "h192" ] ],
+    [ "lcd1:V0", "uno:GND.1", "green", [ "v38.4", "h76.5" ] ],
+    [ "lcd1:RS", "uno:12", "green", [ "v28.8", "h96.3" ] ],
+    [ "lcd1:E", "uno:11", "green", [ "v19.2", "h86.4" ] ],
+    [ "lcd1:D4", "uno:5", "green", [ "v9.6", "h96" ] ],
+    [ "lcd1:D5", "uno:4", "green", [ "v76.8", "h115.3" ] ],
+    [ "lcd1:D6", "uno:3", "green", [ "v38.4", "h105.8" ] ],
+    [ "lcd1:D7", "uno:2", "green", [ "v19.2", "h115.5" ] ],
+    [ "lcd1:RW", "uno:GND.1", "green", [ "v105.6", "h76.7" ] ],
+    [ "lcd1:A", "uno:5V", "green", [ "v67.2", "h163.1", "v278.4", "h-134.4" ] ],
+    [ "lcd1:K", "uno:GND.1", "green", [ "v115.2", "h-19.2" ] ],
+    [ "btn1:1.r", "uno:7", "green", [ "v-76.8", "h269" ] ],
+    [ "btn1:2.r", "uno:5V", "green", [ "h19.4", "v173", "h220.8" ] ],
+    [ "r1:2", "uno:7", "green", [ "v0", "h325.2" ] ],
+    [ "r1:1", "uno:GND.2", "green", [ "v249.6", "h374.4" ] ]
+  ],
+  "dependencies": {}
+}
